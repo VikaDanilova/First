@@ -6,11 +6,14 @@ function Header(props) {
 
 
     return (
-        <div className="Header">
-            <h4>{props.title[0].name}</h4> <h4>{props.title[1].name}</h4>
+        <div align="center" className="header">
+            <h4>{props.menuItems[0].title}</h4>
+            <h4>{props.menuItems[1].title}</h4>
 
             <HeaderLogo/>
-            <HeaderMenu/>
+            <HeaderMenu menuItems={props.menuItems}/>
+
+            {props.menuItems.url}
         </div>
     );
 }

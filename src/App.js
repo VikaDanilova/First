@@ -4,12 +4,15 @@ import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
 function App() {
-    const headerTitle = [
-        {name: 'Menu'},
-        {name: 'Docs'}
+    const menuItems = [
+        {title: 'Menu',
+        url: 'www.menu.com'},
+        {title: 'Docs',
+        url: 'www.docs.com'}
     ];
-    const footerUrl = [
-        {name: 'React'},
+    const footerItem = [
+        {title: 'React',
+        url: 'www.react.com'}
     ];
 
     return (
@@ -17,7 +20,7 @@ function App() {
 
         <div className="App">
 
-            <Header title={headerTitle}/>
+            <Header menuItems={menuItems}/>
 
             <p></p>
             <Content/>
@@ -26,7 +29,7 @@ function App() {
 
             <hr></hr>
 
-            <Footer url={footerUrl}/>
+            <Footer footerItem={footerItem}/>
 
 
         </div>

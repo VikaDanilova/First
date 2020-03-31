@@ -1,16 +1,12 @@
 import React from 'react';
 import HeaderMenuItem from "./HeaderMenuItem";
 
-const HeadrMenuItem = [
-    {name: 'Home'},
-    {name: 'About'},
-    {name: 'Contacts'}
-];
-function HeaderMenu() {
-    return (
-        <div className="Header">
 
-<HeaderMenuItem items={HeadrMenuItem} />
+function HeaderMenu(props) {
+    return (
+        <div className="HeaderMenu">
+
+            <HeaderMenuItem menuItems={props.menuItems}/>
         </div>
     );
 }

@@ -5,13 +5,16 @@ import FooterContact from "./FooterContact";
 
 function Footer(props) {
     return (
-        <div className ="App">
+        <div align="center" className="footer">
+
+            {props.footerItem[0].title}
+            {props.footerItem[0].url}
 
             <FooterMenu/>
             <FooterContact/>
 
 
-            <a href="https://ru.reactjs.org/" target="_blank">  <h4>{props.url[0].name}</h4> </a>
+
 
         </div>
     );

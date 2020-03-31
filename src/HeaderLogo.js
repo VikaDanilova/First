@@ -6,7 +6,9 @@ function HeaderLogo() {
         <div className="HeaderLogo">
             <p align="left">
            <i>
-     <h1>LOGO</h1>
+     <h1>
+         LOGO
+     </h1>
            </i>
             </p>
         </div>
